@@ -1,0 +1,42 @@
+ITUS102 - PRACTICAL EXAMINATION | DEBUGGING AND IMPLEMENTATION REPORT
+Date: 13-10-2026 | Task 01 - Electricity Consumption Bill Estimator
+
+Enrollment No.:26CE111
+Name:Shivam Tripurari
+
+SIMPLE BUGS (write a brief explanation for each)
+Bug | Original problem | Correction made | Why required
+S1  |spelling of calculator was wrong|calculator spelling corrected|because #calculator must match with id name below which was "calculator" and not calcuator.
+S2  |div was used instead of footer|div is replaced with footer|after using header and main ,footer is correct semantic tag for html 5.
+S3  |colon was not placed |colon is placed between background color and #f1f6f9|without colon (:) it won't work.
+S4  |.pageTitle was used instead of #pageTitle|#pageTitle written over .pageTitle|when css is used based on id in html #NAMEID is used instead of .NAMEID
+S5  |in js file, calculation was increased unit by 1.|+1 removed in const units= Number(document.getElementById("units").value);|calculation should be done correctly based on no. of units.
+S6  |500 was not correct fixed charge|500 was replaced with 50 in fixed in js|500 had to replaced with 50 acc. to demand.
+
+CODE COMPLETION / IMPLEMENTATION (briefly state what was completed)
+M1:<meta charset="UTF-8"> and <meta name="viewport" content="width=device-width, initial-scale=1.0"> id added to the code.
+M2:aside tag id added to give reminder before giving input. 
+M3:display and justify is added in .nav-links
+M4:display and grid-template-columns is added in .cards
+M5:.cards and .nav-links is added with grid-template-columns ans flex-direction respectively
+M6:amount * (percentage / 100); was returned to function
+D1:else if ladder was created for specific rate for specific range
+D2:units * rate was return to function
+D3:calculation for bill was done in the function.
+
+FUNCTIONAL TEST
+Test input:Electricity units consumed:250    Consumer type:Domestic
+
+Observed result:Rate: ₹7/unit | Base: ₹1750 | Surcharge: ₹0 | Fixed: ₹50 | Total: ₹1800
+
+                                Detailed summary
+                                 100 units: Base bill = 500
+                                 200 units: Base bill = 1400
+                                 300 units: Base bill = 2100
+                                 400 units: Base bill = 3600
+                                 500 units: Base bill = 4500
+Mobile layout checked (Yes/No):Yes
+
+GIT VERSION CONTROL
+git log -1 --oneline output:
+GitHub URL (if available):https://github.com/Shivam-Tripurari/26CE111_ShivamTripurari_PracticalTask-ODD-13-10-2026-Task-01.git
